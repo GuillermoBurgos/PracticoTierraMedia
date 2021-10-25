@@ -1,0 +1,15 @@
+Usuario: Gandalf
+
+Promociones compradas: 
+
+Pack Aventura Plus	8.0 Hs. 		56.7 Oros.
+Pack Aventura 2	7.5 Hs. 		10.0 Oros.
+
+Atracciones compradas: 
+
+Moria	2.0 Hs.		10.0 Oros.
+La Comarca	6.5 Hs.		3.0 Oros.
+Atraccion Prueba	1.0 Hs.		1.0 Oros.
+
+TOTAL:		25.0 Hs.		80.7 Oros.
+
