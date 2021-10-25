@@ -3,6 +3,7 @@ package practico;
 
 public class Atraccion {
 
+	public  boolean adquirida=false;
 	String nombreAtraccion;
 	double costoDeVisita;
 	double duracionDelRecorrido;
@@ -34,10 +35,11 @@ public class Atraccion {
 	}
 	@Override
 	public String toString() {
-		return "nombreAtraccion=" + nombreAtraccion + ", costoDeVisita=" + costoDeVisita
-				+ ", duracionDelRecorrido=" + duracionDelRecorrido + ", cupoDiarioDePersonas=" + cupoDiarioDePersonas+"\n"
-				;
+		return "Atraccion [adquirida=" + adquirida + ", nombreAtraccion=" + nombreAtraccion + ", costoDeVisita="
+				+ costoDeVisita + ", duracionDelRecorrido=" + duracionDelRecorrido + ", cupoDiarioDePersonas="
+				+ cupoDiarioDePersonas + "]\n";
 	}
+
 
 
 

@@ -8,53 +8,41 @@ import java.util.ArrayList;
 
 public class LeerUsuario {
 
-	static ArrayList<Usuario> listaUsuarios=new ArrayList<Usuario>();
+	static ArrayList<Usuario> listaUsuarios = new ArrayList<Usuario>();
 
-	public static void main(String[] args) {
-		
+	public ArrayList<Usuario> leerUsuario() {
+
 		Usuario aux;
-		try{
-			FileReader input = new FileReader(new File ("usuarios.csv"));
+		try {
+			FileReader input = new FileReader(new File("usuarios.csv"));
 			BufferedReader bufInput = new BufferedReader(input);
-			
+
 			String line;
 			String[] datos;
-			
-			int i=0;
+
+			int i = 0;
 			line = bufInput.readLine();
-			
-			
-			
-			while(line != null){
-				
+
+			while (line != null) {
+
 				aux = new Usuario();
-				datos= line.split(",");
-							
-		
-					
-					aux.setNombreUsuario(datos[0]);
-					aux.setCapacidadDeCompra(Double.parseDouble(datos[1]));
-					aux.setCapacidadDeVisita(Double.parseDouble(datos[2]));
-					
-					
-					
-					listaUsuarios.add(aux);
-					//System.out.println(listaUsuarios);
-					
+				datos = line.split(",");
+
+				aux.setNombreUsuario(datos[0]);
+				aux.setCapacidadDeCompra(Double.parseDouble(datos[1]));
+				aux.setCapacidadDeVisita(Double.parseDouble(datos[2]));
+
+				listaUsuarios.add(aux);
+
 				line = bufInput.readLine();
-				
-				
-				
-				
 
 			}
-			
-			System.out.println(listaUsuarios);
+
 			bufInput.close();
-		} catch (IOException e){
+		} catch (IOException e) {
 			e.printStackTrace();
 		}
+		return (listaUsuarios);
 	}
-
 
 }
